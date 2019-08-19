@@ -42,9 +42,6 @@ Word::Word(const string& word): word_{word}
 // overloads the equivalence operator which allows two Words to be compared using ==
 bool Word::operator==(const Word& rhs) const
 {
-    //std::transform(word_.begin(), word_.end(), word_.begin(), [](unsigned char c){ return std::tolower(c); });
-    //std::transform(rhs.word_.begin(), rhs.word_.end(), rhs.word_.begin(), [](unsigned char c){ return std::tolower(c); });
-    
 	if (word_ == rhs.word_)
 		return true;
 	else
@@ -54,8 +51,9 @@ bool Word::operator==(const Word& rhs) const
 bool Word::isQueryable() const
 {
     if(word_.size() >= 3){return true;}
-      else if(word_.size() < 3){return false;}
-	//return false;
+     else if(word_.size() < 3){return false;}
+      
+	return false;
 }
 
 

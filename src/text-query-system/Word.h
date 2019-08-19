@@ -21,10 +21,8 @@ public:
 	bool operator==(const Word& rhs) const;			
 	// returns true if queryable, false otherwise
 	// (according to the brief, words less than 3 characters are not queryable)
-	bool isQueryable() const; 
-    //changes uppercase words to lowercase
-    const string& changeCase();
-    
+	bool isQueryable() const;
+
 private:	
 	string word_;	
 };
